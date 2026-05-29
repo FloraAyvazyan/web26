@@ -325,7 +325,7 @@ h2:hover::after {
 /* ---------- LIST ---------- */
 .custom-list {
   margin-left: 1.2rem;
-  list-style-type: '✔️ ';
+  list-style-type: square;
 }
 
 /* ---------- QUOTE ---------- */
