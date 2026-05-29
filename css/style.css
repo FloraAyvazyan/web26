@@ -282,8 +282,7 @@ h2:hover::after {
   transition: all 0.3s;
   border: none;
   cursor: pointer;
-  box-shadow: 0 5px 12px rgba(249, 115, 22, 0.3);
-}
+  box-shadow: 0 5px 12px #F973164D;}
 
 .btn:hover {
   background: #ea580c;
