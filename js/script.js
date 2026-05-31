@@ -1,6 +1,6 @@
 (function () {
 
-  // ---------- SKILL BARS (для страницы skills.html) ----------
+  // ---------- SKILL BARS (skills.html) ----------
   function animateSkillBars() {
     const fillBars = document.querySelectorAll('#skills .progress-fill');
     fillBars.forEach(bar => {
@@ -15,7 +15,7 @@
     });
   }
 
-  // ---------- INTERSECTION OBSERVER для навыков ----------
+  // ---------- INTERSECTION OBSERVER ---------
   const skillsSection = document.getElementById('skills');
   let skillsAnimated = false;
 
@@ -52,13 +52,13 @@
       feedbackDiv.classList.remove('feedback-error', 'feedback-success');
 
       if (name === '' || email === '' || message === '') {
-        feedbackDiv.innerHTML = '⚠️ Please fill out all required fields.';
+        feedbackDiv.innerHTML = ' Please fill out all required fields.';
         feedbackDiv.classList.add('feedback-error');
       } else if (!email.includes('@') || !email.includes('.')) {
-        feedbackDiv.innerHTML = '📧 Please enter a valid email address.';
+        feedbackDiv.innerHTML = ' Please enter a valid email address.';
         feedbackDiv.classList.add('feedback-error');
       } else {
-        feedbackDiv.innerHTML = '✅ Thank you ' + name + '! I will get back to you soon.';
+        feedbackDiv.innerHTML = ' Thank you ' + name + '! I will get back to you soon.';
         feedbackDiv.classList.add('feedback-success');
         contactForm.reset();
 
@@ -96,7 +96,7 @@
     yearSpan.innerText = new Date().getFullYear();
   }
 
-  // ---------- АКТИВНАЯ ССЫЛКА В НАВИГАЦИИ ----------
+  // ----------  ----------
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   const navLinks = document.querySelectorAll('.nav-btn');
 
